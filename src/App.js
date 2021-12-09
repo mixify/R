@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+
 import './App.css';
+import hydran from './img/house.png'
+
+import React from 'react';
+import MyColor from './components/MyColor.js';
+import MyBTS   from './components/MyBTS';
+import MyMemo  from './components/MyMemo';
+
+
+class App extends React.Component {
+  render(){
+    return (
+      <div>
+        <img src={hydran} alt="수선화" width="400" height="150" border="2"/><p></p>
+        
+        <MyColor kind="snow"  price="24" />
+        <MyBTS />
+        <MyMemo />
+      </div>
+    );
+  }
+}
+export default App;
+
+
+
+//App.js
+//첫번째 
+/*
+import './App.css';
+import hydran from './img/hydran.png'
+
+import MyColor from './components/MyColor.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <img src={hydran} alt="수선화" width="600" height="150" border="2"/><p></p>
+      
+      <MyColor kind="snow"  price="24" />
     </div>
   );
 }
-
 export default App;
+*/
