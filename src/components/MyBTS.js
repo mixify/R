@@ -31,4 +31,5 @@ class MyBTS extends Component {
     }
 }
 
-export default MyBTS
+export {MyBTS}
+// export default MyBTS

@@ -1,0 +1,14 @@
+.menu-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding:5px;
+    text-decoration: none;
+    background-color: rgb(203, 206, 178);
+}
+
+.menu-wrapper li {
+    padding: 5px 0;
+    color:  #61dafb;
+    text-decoration: none;
+}

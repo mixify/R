@@ -4,6 +4,12 @@
 import React, { Component } from 'react'
 
 class MyColor extends Component {
+    static defaultProps = {
+        kind : 'asd',
+        price : '123'
+    }
+
+
     render() {
         const cc = { fontSize: '20pt' };
         const { kind, price} = this.props;
